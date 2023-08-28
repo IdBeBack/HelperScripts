@@ -12,7 +12,7 @@ public class CursorManager : Singleton<CursorManager>
 
     private void OnGUI()
     {
-        if (displayCursor)
+        if (currCursor && displayCursor)
         {
             Rect rect = new Rect(Event.current.mousePosition.x - currCursor.hotspot.x,
                 Event.current.mousePosition.y + currCursor.hotspot.y, currCursor.width, currCursor.height);
